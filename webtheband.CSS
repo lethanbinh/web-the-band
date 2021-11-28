@@ -1,0 +1,586 @@
+/* kích thước:
+
+PC: >=1024px
+
+tablet: >=740px <1024px
+
+mobile: <740px */
+
+/* responsive */
+
+/*
+
+1 vị trí      từ ngoài vào trong
+
+2 kích thước  từ trên xuống dưới
+
+3 màu sắc     tổng quan đến chi tiết
+
+4 kiểu dáng
+
+*/
+
+/* reset CSS */
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+/* end reset CSS */
+    
+    /* common class */
+    .row{
+       
+    }
+    .col{
+        float: left;
+    }
+    .col::after{
+        display: block;
+        clear: both;
+    }
+    .col-right{
+        float: right;
+    }
+    .col::after{
+        display: block;
+        clear: both;
+    }
+    .col-full{
+     width: 100%;
+    }
+    .col-half{
+        width: 50%;
+    }
+    .col-third{
+        width: calc(100%/3);
+    }
+    .col-fourth{
+        width: 25%;
+    }
+    .mt-4{
+      margin-top: 4px;
+    }
+    .mt-8{
+        margin-top: 8px;
+    }
+    .mt-12{
+        margin-top: 12px;
+    }
+    .mt-16{
+        margin-top: 16px;
+    }
+    .mt-32{
+        margin-top: 32px;
+    }
+    .mt-64{
+        margin-top: 64px;
+    }
+    .mb-4{
+        margin-bottom:4px ;
+    }
+    .mb-8{
+        margin-bottom:8px ;
+    }
+    .mb-12{
+        margin-bottom: 12px;
+    }
+    .mb-16{
+        margin-bottom: 16px;
+    }
+    .mb-32{
+        margin-bottom: 32px;
+    }
+    .mb-64{
+        margin-bottom: 64px;
+    }
+    .ml-4{
+        margin-left: 4px;
+    }
+    .ml-8{
+        margin-left: 8px;
+    }
+    .ml-12{
+        margin-left: 12px;
+    }
+    .ml-16{
+        margin-left: 16px;
+    }
+    .ml-32{
+        margin-left: 32px
+    }
+    .mr-4{
+        margin-right: 4px;
+    }
+    .mr-8{
+        margin-right: 8px;
+    }
+    .mr-12{
+        margin-right: 12px;
+    }
+    .mr-16{
+        margin-right: 16px;
+    }
+    .ml-32{
+        margin-right: 32px;
+    }
+    .white-text{
+        color: #fff;
+    }
+    .black-text{
+        color: #000;
+    }
+    .center-text{
+        text-align: center;
+    }
+
+    /* end common class */
+    
+    html{
+    
+    font-family: 'Times New Roman', Times, sans-serif;
+    
+    scroll-behavior: smooth;
+    
+    }
+    
+    /* header and navigation */
+    
+    .header{
+    height: 50px;
+    background-color: #000;
+    font-size: 16px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    }
+    .menu-icon{
+        display: none;
+    }
+    .nav{
+        display: inline-block;
+    }
+    .nav > li{
+    display: inline-block;
+    line-height: 50px;
+    }
+
+    .nav li a{
+    text-decoration: none;
+    }
+
+    .nav > li >a{
+        color: #fff;
+        text-transform: uppercase;
+        display: block;
+        padding: 0 32px;
+    }
+
+    .nav> li:hover >a  {
+        background-color: #ccc;
+        color: #000;
+    }
+
+    .nav .down-arrow{
+        font-size: 12px;
+    }
+
+    .nav li:last-child{
+       position: relative;
+    }
+
+    .nav li:last-child:hover .subnav{
+        display: block;
+    }
+
+    .subnav{
+        position: absolute;
+        top: 50px;
+        min-width: 170px;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgb(0, 0, 0,0.5); 
+        display: none;
+    }
+
+    .subnav li {
+       list-style-type: none;
+       line-height: 40px;
+    }
+
+    .subnav li a{
+        color: #000;
+        padding-left: 25px;
+        font-size: 16px;
+    }
+
+    .subnav li:hover a{
+        background-color: #ccc;
+        display: block;
+        box-sizing: border-box;
+    }
+    .input-search{
+        float: right;
+        margin: 10px 0 10px 10px;
+        overflow: hidden;
+    }
+   .input-search ::placeholder{
+        color: orange;
+    }
+    .input-nav{
+        padding: 7px;
+        display: inline-block;
+        border-radius: 10px;
+        position: relative;
+        margin-right: 29px;
+        background-color: #757575;
+        color: #fff;
+    }
+    .nav-search{
+      font-size: 20px;
+      color: #fff;
+      float: right;
+      display: block;
+      position: absolute;
+      right: 32px;
+      top: 15px;
+      overflow: hidden;
+    }
+    .nav-search:hover{
+      color:red;
+      cursor: pointer;
+    }
+
+    /* end header */
+   
+    /* slider */
+    .slider{
+        margin-top: 50px;
+        padding-top: 50%;
+        background-image: url('../img/chicago.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        position: relative;
+    }
+    .text-desc{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .Chicago{
+        color: #fff;
+        margin-bottom: 10px;
+        font-size: 25px;
+        font-weight: 200;
+    }
+    .desc{
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        text-shadow:  0 0 1px #000;
+
+    }
+    .Chicago:hover{
+        color: #ccc;
+        cursor: pointer;
+    }
+    .desc:hover{
+        color: #ccc;
+        cursor: pointer;
+    }
+
+    /* end slider */
+
+    /* content */
+
+    /* The Band */
+    .content .content-section{
+       padding: 64px 0;
+       max-width: 800px;
+       margin-left: auto;
+       margin-right: auto;
+       overflow: hidden;
+    }
+    .content .content-text-heading{
+       padding-top: 30px;
+    }
+    .content .heading{
+        font-size: 30px;
+        font-weight: 200;
+        letter-spacing: 7px;
+        margin-bottom: 15px;
+    }
+    .content .small-heading{
+        font-style: italic;
+        color: #757575;
+    }
+    .content .paragrapgh{
+        margin-top: 20px;
+        letter-spacing: 0.7px;
+        text-align: justify;
+        font-size: 16px;
+        line-height: 1.2;
+    }
+    .content .product-list{
+        width: 800px;
+        padding: 50px 0 ;
+    }
+    .content .product{
+        
+    }
+    .content .Name{
+        margin-bottom: 20px;
+    }
+    .content .camera{
+        width: 60%;
+        border-radius: 5px;
+    }
+
+    /* end the band */
+    
+    /* Tour dates */
+
+    /* tour-list */
+    .tour-date{
+        background-color: #000;
+    }
+    .tour-date .tour-list{
+        background-color: #fff; 
+        list-style-type: disc;
+    }
+    .tour-list li{
+        padding: 8px 16px;
+        border: 1px solid #ddd; 
+    }
+    .tour-date .month{
+       display: inline-block;
+       color: #757575;
+    }
+    .tour-date .state{
+       margin-left: 16px;
+       background-color: red;
+       padding: 2px 8px;
+    }
+    .tour-date .number{
+        display: inline-block;
+        float: right;
+        border-radius: 50%;
+        background-color: #000;
+        width: 22px;
+    }
+
+    /* place-list  */
+
+    .content .place-list{
+       overflow: hidden;
+       padding-top: 30px;
+       padding-bottom: 30px;
+    }
+    .place-list .tour-place{
+       padding: 0 8px;
+    }
+    .place-list .tour-place:first-child{
+        margin-left: -8px;
+        margin-right: 8px;
+    }
+    .place-list .tour-place:last-child{
+        margin-right: -8px;
+        margin-left: 8px;
+    }
+
+    .place-list .place-picture{
+        width: 100%;
+        display: block;
+    }
+    .place-list .place-picture:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    .place-list .info-place{
+        padding: 16px;
+        background-color: #fff;
+        font-size: 17px;
+    }
+    .place-list .NewYork{
+       margin-bottom:18px;
+    }
+    .place-list .day{
+     color: #757575;
+     margin-bottom: 15px;
+    }
+    .place-list .place-desc{
+     font-weight: 400;
+     margin-bottom: 12px;
+    }
+    .place-list .Buy-btn{
+     background-color: #000;     
+     color: #fff;
+     padding: 8px 16px;
+     cursor: pointer;
+    }
+    .place-list .Buy-btn:hover{
+        background-color: #ccc;
+        color: #000;
+    }
+
+/* end tour */
+
+    /* contact */
+
+    .contact-team{
+        font-size: 18px;
+    }
+    .contact-team i[class*="ti-"] {
+        margin-right: 10px;
+    }
+    .contact-team .contact-desc{
+        font-weight: 600;
+    }
+    .nameemail{
+        border: 1px solid #ccc;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+    .message{
+        border: 1px solid #ccc;
+        width: 100%;
+        padding: 8px;
+    }
+    .send-btn{
+        padding: 8px 16px;
+        background-color: #000;
+        cursor: pointer;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    .send-btn:hover{
+        background-color: #ccc;
+        color: #000;
+    }
+    
+/* end contact */
+
+    /* footer */
+    .footer .map{
+        width: 100%;
+    }
+    .footer-info{
+        padding: 64px 16px;
+    }
+    .footer-icon{
+        font-size: 20px;
+    }
+    .footer-info i[class*="ti-"]:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    .footer-desc{
+        font-size: 18px;
+        color: #757575;
+    }
+    .footer-desc a{
+        color: blue;
+    }
+
+    /* end footer */
+    
+
+    /* overlay */
+    @keyframes anime {
+        from{
+            transform: translateY(-400px);
+        }
+
+        to{
+            transform: translateY(0);
+        }
+    }
+    
+    .overlay.open{
+        display: none;
+    }
+    .overlay{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .modal-box{
+        width: 800px;
+        position: relative;
+        overflow: hidden;
+        animation: anime ease 0.6s;
+    }
+    .modal-close{
+        position: absolute;
+        right: 0;
+        padding: 16px;
+        font-weight: 600;
+    }
+    .modal-close:hover{
+        background-color: #000;
+        color: red;
+        cursor: pointer;
+    }
+    .modal-header{
+        background-color: #009688;
+        padding: 32px 0;
+    }
+    .modal-heading{
+        font-size: 32px;
+        letter-spacing: 5px;
+        margin: 16px 0;
+    }
+    .modal-body{
+        background-color: #fff;
+        padding: 16px;
+    }
+    .label-text{
+        margin: 15px 0;
+        cursor: pointer; 
+    }
+    .modal-info{
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    .modal-pay{
+        background-color: #009688;
+        margin-top: 16px;
+        padding: 16px;
+        font-size: 18px;
+    }
+    .modal-pay:hover{
+        color: #000;
+        background-color: #ccc;
+        cursor: pointer;
+    }
+    .modal-footer{
+        background-color: #fff; 
+        overflow: hidden; 
+    }
+    .need-help{
+        float: right;
+        padding: 0 16px 16px 16px;
+        font-size: 17px;
+    }
+    .need-help a{
+        color: #2196f3;
+    }
+
+    /* end overlay */
+    

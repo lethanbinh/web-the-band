@@ -1,0 +1,202 @@
+@media (min-width:46.25em) and (max-width:63.99em) {
+    /* common class */
+    .res-ml-4{
+        margin-left: 4px;
+    }
+    .res-ml-8{
+        margin-left: 8px;
+    }
+    .res-ml-16{
+        margin-left: 16px;
+    }
+    .res-ml-32{
+        margin-left: 32px;
+    }
+    .res-mr-4{
+        margin-right: 4px;
+    }
+    .res-mr-8{
+        margin-right: 8px;
+    }
+    .res-mr-16{
+        margin-right: 16px;
+    }
+    .res-mr-32{
+        margin-right: 32px;
+    }
+    
+    /* end common class */
+
+    /* navigation and header */
+    .input-nav{
+        margin-right: 9px;
+        width: 140px;
+    }
+    .nav-search{
+        right: 9px;
+    }
+
+    
+    /* content */
+    .content .paragrapgh{
+        padding-left: 32px;
+        padding-right: 32px;
+        font-size: 20px;
+    }
+    .content .res-product{
+        width: auto;
+    }
+    .place-list .Buy-btn{
+        width: 100%;
+        font-size: 17px;
+    }
+    .contact-info{
+        width: 30%;
+    }
+    .fill-in{
+        margin-left: 100px;
+    }
+    .footer-icon{
+        font-size: 30px;
+    }
+    .footer-desc{
+        font-size: 20px;
+    }
+    .footer-info i[class*="ti-"] {
+        padding: 5px;
+    }
+}
+@media (max-width:46.24em) {
+    /* navigation and header */
+  .header{
+      overflow: hidden;
+  }
+  .nav{
+      display: block;
+      background-color: #000;
+  }
+  .nav> li:first-child{
+      display: inline-block;
+  }
+  .nav li {
+      display: block;
+  }
+  .input-search{
+      display: none;
+  }
+  .nav-search{
+      display: none;
+  }
+  .menu-icon{
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      color: #fff;
+      padding: 17px;
+  }
+  .menu-icon:hover{
+      color: #000;
+      background-color: #ccc;
+  }
+  .subnav{
+      width: 100%;
+      position: initial;
+      background-color: #757575;
+      padding-left: 20px;
+  }
+  .subnav li a{
+      color: #fff;
+  }
+
+  /* content */
+  .content .content-text-heading{
+      padding-top: 0;
+  }
+  .content .paragrapgh{
+      padding-left: 16px;
+      padding-right: 16px;
+      font-size: 20px;
+  }
+.content .heading{
+    font-size: 35px;
+}
+.content .small-heading{
+    font-size: 20px;
+}
+.content .product-list{
+    width: 100%;
+}
+.content .product{
+    width: 100%;
+}
+.content .Name{
+    padding-top: 20px;
+    font-size: 20px;
+}
+/* tour */
+.tour-date .tour-list{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.tour-date .place-list{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.place-list .tour-place{
+    width: 100%; 
+    margin-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.place-list .tour-place:first-child{
+    margin-left: 0;
+    margin-right: 0;
+}
+.place-list .tour-place:last-child{
+    margin-left: 0;
+    margin-right: 0;
+}
+.place-list .Buy-btn{
+    font-size: 17px;
+    width: 100%;
+}
+.modal-box{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+/* contact */
+.contact-info{
+    width: 100%;
+    padding-left: 45px;
+    font-size: 20px;
+    line-height: 30px;  
+}
+.fill-in{
+    width: 90%;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+.nameemail{
+    width: 100%;
+    margin-left: 0;
+    padding: 12px;
+}
+.message{
+    padding: 12px;
+}
+.send-btn{
+    margin-top: 20px;
+    width: 100%;
+    font-size: 17px;
+}
+/* footer */
+.footer-icon{
+    font-size: 30px;
+}
+.footer-desc{
+    font-size: 20px;
+}
+.footer-info i[class*="ti-"] {
+    padding: 5px;
+}
+}
