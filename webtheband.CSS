@@ -260,7 +260,7 @@ mobile: <740px */
     .slider{
         margin-top: 50px;
         padding-top: 50%;
-        background-image: url('../img/chicago.jpg');
+        background-image: url('./img/chicago.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
